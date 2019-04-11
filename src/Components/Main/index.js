@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Grid, Paper } from '@material-ui/core';
 import indexcss from './index.css';
 import Button from '@material-ui/core/Button';
+import MapLocation from './MapLocation'
 
 export default props =>
     <Fragment>
@@ -51,7 +52,7 @@ export default props =>
         {/* Section Three */}
         <Grid container>
             <Grid item xs={5}>
-                <div style={{ width: '100%', height: '90%', textAlign: 'center', verticalAlign: 'middle', backgroundColor: 'yellow' }}>
+                <div style={{ width: '100%', height: '89.7%', textAlign: 'center', verticalAlign: 'middle', backgroundColor: 'yellow' }}>
                 <div style={{ width: '10%', height: '20%' }}></div>
                     <div>
                         <span style={{ float: 'left', margin: '2%' }}><Button><h2>GEEK STATIONS</h2></Button></span><span style={{ float: 'right', margin: '2%' }}><Button><h2>PLUG AND PLAY</h2></Button></span>
@@ -213,11 +214,7 @@ export default props =>
         <h1><div style={{ textAlign: 'center',marginTop:'5%' }}>FIND US AT</div></h1>
         <Grid container>
         <Grid item xs>
-        <div style={{width:'100%',textAlign:'center',marginBottom:'2%'}}>
-        <p>Loading Map...</p>
-        </div>
+        <MapLocation/>
         </Grid>
         </Grid>
-
-
     </Fragment>

@@ -5,7 +5,7 @@ import Main from './Main';
 
 export default class extends Component{
     render(){
-        return<Fragment>
+        return<Fragment style={{ backgroundColor:'green'}}>
             <Header/>
             <Main/> 
             <Footer/>
